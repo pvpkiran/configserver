@@ -14,24 +14,25 @@
     <artifactId>client</artifactId>
 
 
+    <properties>
+        <spring-cloud-starter-config.version>1.4.1.RELEASE</spring-cloud-starter-config.version>
+        <spring-cloud-context.version>1.2.4.RELEASE</spring-cloud-context.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
-            <version>LATEST</version>
+            <version>${spring-cloud-starter-config.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-context</artifactId>
-            <version>1.2.4.RELEASE</version>
+            <version>${spring-cloud-context.version}</version>
         </dependency>
     </dependencies>
 

@@ -13,12 +13,15 @@
 
     <artifactId>server</artifactId>
 
+    <properties>
+        <spring-cloud-config-server.version>1.4.1.RELEASE</spring-cloud-config-server.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
-            <version>LATEST</version>
+            <version>${spring-cloud-config-server.version}</version>
         </dependency>
     </dependencies>
 
